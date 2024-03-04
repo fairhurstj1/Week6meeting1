@@ -10,6 +10,17 @@ public class Cat {
     //cat breed
     private String catBreed;
 
+    public Cat(){
+        catBreed = "Need a breed";
+    }
+    public Cat(String name, String color, double weight, String breed)
+    {
+        catName = name;
+        catColor = color;
+        catWeight = weight;
+        catBreed = breed;
+    }
+
     //setup setters, getters ;for each inst var
     //Setter method technically a mutator method
     //Getter is Accessor method - means we can get data from the method
