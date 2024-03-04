@@ -15,7 +15,7 @@ public class Cat {
     }
     public Cat(String name, String color, double weight, String breed)
     {
-        catName = name;
+        this.catName = name;
         catColor = color;
         catWeight = weight;
         catBreed = breed;
@@ -68,6 +68,20 @@ public class Cat {
     public String getCatBreed(){
         return catBreed;
     }//ends getCatBreed
+
+    //create disp method to print obj info
+    public void displayCatInfo(){
+        System.out.println("This cat's name is: "+this.getCatName());
+        System.out.println("This cat's color is: "+this.getCatColor());
+        System.out.println("This cat's weight is: "+this.getCatWeight());
+        System.out.println("This cat's breed is: "+this.getCatBreed());
+    }
+
+    //method to recalc cat weight
+    public double calcWeight(){
+        //add 1 pound to cat weight
+        return catWeight+1;
+    }
 }
 
 
